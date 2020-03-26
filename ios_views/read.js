@@ -34,7 +34,7 @@ class readView extends Component {
     constructor(){
         super();
         this.state = {
-            isShow:true
+            isShow:false,
         };
     }
     
@@ -46,7 +46,7 @@ class readView extends Component {
             {
                 this.state.isShow?
                 <ScrollView style={styles.container}>
-                <Topic data={this.state.readDataList} ></Topic>
+                <Topic topicData={this.state.readDataList} ></Topic>
                 <Line></Line>
                 <Recommend title="热门推荐"></Recommend>
                 <Line></Line>
@@ -62,11 +62,18 @@ class readView extends Component {
 
     componentDidMount(){
         let readDataList = Util.getReadData;
-        this.setState=({
+        this.setState({
             isShow:true,
             readDataList:readDataList
         });
-        console.log('阅读数据'+readDataList[0].programName)
+        this.setState({
+            isShow:true,
+            readDataList:readDataList
+        });
+        this.setState({
+            isShow:true,
+            readDataList:readDataList
+        })
     }
 }
 

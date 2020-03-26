@@ -21,7 +21,7 @@ class ImageView extends Component{
             <View style={styles.img_item}>
                 <Image 
                 style={styles.img}
-                source={{uri:"gold_box"}}
+                source={{uri:this.props.imageUri}}
                 >
                 </Image> 
             </View>
@@ -33,19 +33,26 @@ class topic extends Component{
     
     constructor(props){
         super(props);
-        // this.state = {
-        //     topicData:this.props.topicData
-        // }
-        console.log("推荐",props.data)
+        this.state = {
+            topicData:props.topicData
+        }
+        console.log("推荐",props.topicData)
     }
 
     render(){
+        var views = [];
+
+        for (var i in [1,2]){
+            views.push(
+                <ImageView imageUri={'http://cdn.51lm.tv/'+this.props.topicData[i].coverPic}></ImageView>
+            );
+        }
+
         return(
             <View style={styles.container}>
                 <Text style={styles.Text1}>推荐专题</Text>
                 <View style={styles.img_view}>
-                    <ImageView imageUri="gold_box"></ImageView>
-                    <ImageView imageUri="gold_box"></ImageView>
+                     {views}
                 </View>
                 <Text style={styles.Text2}>查看更多同期专题 &gt;</Text>
             </View>
