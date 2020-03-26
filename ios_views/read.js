@@ -62,8 +62,10 @@ class readView extends Component {
 
     componentDidMount(){
         this.setState=({
-            isShow:true
+            isShow:true,
+            readDataList:Util.getReadData
         });
+        // console.log('阅读数据',Util.getReadData)
     }
 }
 

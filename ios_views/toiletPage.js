@@ -7,14 +7,12 @@ import {
 
 import TWebView from './twebview';
 
-import { from } from 'rxjs';
-
 class toiletPages extends Component {
     
     render(){
         return(
             <View style={styles.container}>
-                {/* <TWebView url="https://live.51lm.tv/"></TWebView> */}
+                <TWebView url="https://live.51lm.tv"></TWebView>
             </View>
             
         );

@@ -17,7 +17,6 @@ class TWebView extends Component{
         super(url);
         this.state = {
             url: this.props.url,
-            // url: this.url
             isError:false
         }
     }

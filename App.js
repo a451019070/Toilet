@@ -31,10 +31,10 @@ import TTabBarAA from './ios_views/tTabBar';
 const App: () => React$Node = () => {
   return (
     <>
+    <SafeAreaView style={{backgroundColor:'#F8F8F8'}}>
+      </SafeAreaView>
       <TTabBarAA>
       </TTabBarAA>
-      <SafeAreaView style={{backgroundColor:'#F8F8F8'}}>
-      </SafeAreaView>
       <StatusBar barStyle='dark-content' />
     </>
   );
