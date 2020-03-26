@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/zx/Desktop/Toilet/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lv/values-lv.xml",
+            "outputFile": "/Users/zx/Desktop/Toilet1/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lv/values-lv.xml",
             "map": [
                 {
                     "source": "/Users/zx/.gradle/caches/transforms-2/files-2.1/321f59fb44a65e15bc7f59a76ecc348d/res/values-lv/values-lv.xml",

@@ -13,8 +13,8 @@ import Util from './util';
 
 
 class TWebView extends Component{
-    constructor(url){
-        super(url);
+    constructor(props){
+        super(props);
         this.state = {
             url: this.props.url,
             isError:false

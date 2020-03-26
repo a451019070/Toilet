@@ -30,6 +30,15 @@ class ImageView extends Component{
 }
 
 class topic extends Component{
+    
+    constructor(props){
+        super(props);
+        // this.state = {
+        //     topicData:this.props.topicData
+        // }
+        console.log("推荐",props.data)
+    }
+
     render(){
         return(
             <View style={styles.container}>

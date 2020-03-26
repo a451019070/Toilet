@@ -46,7 +46,7 @@ class readView extends Component {
             {
                 this.state.isShow?
                 <ScrollView style={styles.container}>
-                <Topic></Topic>
+                <Topic data={this.state.readDataList} ></Topic>
                 <Line></Line>
                 <Recommend title="热门推荐"></Recommend>
                 <Line></Line>
@@ -61,11 +61,12 @@ class readView extends Component {
     }
 
     componentDidMount(){
+        let readDataList = Util.getReadData;
         this.setState=({
             isShow:true,
-            readDataList:Util.getReadData
+            readDataList:readDataList
         });
-        // console.log('阅读数据',Util.getReadData)
+        console.log('阅读数据'+readDataList[0].programName)
     }
 }
 
