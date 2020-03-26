@@ -10,8 +10,6 @@ import { WebView } from 'react-native-webview';
 import Util from './util';
 
 
-console.log("!!!!!!!!",Util.size);
-console.log("!!!!!!!!!",Util.pixel);
 
 
 class TWebView extends Component{
